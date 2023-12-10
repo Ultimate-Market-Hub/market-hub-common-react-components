@@ -1,0 +1,8 @@
+node_modules
+build
+.DS_Store
+*.js
+.jsii
+dist
+public/locales/**/*.json
+src/__generated__
