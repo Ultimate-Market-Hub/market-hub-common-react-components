@@ -1,6 +1,6 @@
 {
   "name": "@ultimate-market-hub/market-hub-components-library",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "files": [
     "dist",
     "i18next-parser/JSONLexer.js "
