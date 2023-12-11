@@ -1,9 +1,9 @@
-import "../src/style.css";
-import { reactRouterDecorator } from "./decorator";
+import '../preview/index.css';
+import { reactRouterDecorator } from './decorator';
 
 export const parameters = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: { argTypesRegex: '^on[A-Z].*' },
     decorators: [reactRouterDecorator],
     controls: {
       matchers: {

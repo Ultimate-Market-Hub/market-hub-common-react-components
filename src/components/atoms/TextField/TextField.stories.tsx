@@ -4,7 +4,7 @@ import { expect, fn, userEvent, within } from '@storybook/test';
 
 const meta = {
   component: TextField,
-  title: 'Components/Atoms/TextField',
+  title: 'components/atoms/TextField',
   args: {
     id: 'input-id',
     onChange: fn(),

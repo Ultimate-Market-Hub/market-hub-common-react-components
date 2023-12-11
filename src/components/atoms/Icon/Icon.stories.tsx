@@ -3,7 +3,7 @@ import { Icon } from './Icon';
 
 const meta = {
   component: Icon,
-  title: 'Components/Atoms/Icon',
+  title: 'components/atoms/Icon',
   args: { name: 'AcademicCapIcon', version: 'outline', size: 'sm' },
 } satisfies Meta<typeof Icon>;
 export default meta;

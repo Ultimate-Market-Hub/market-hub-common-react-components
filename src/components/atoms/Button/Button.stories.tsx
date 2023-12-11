@@ -3,7 +3,7 @@ import type { Meta, StoryFn } from '@storybook/react';
 import { Button } from './Button';
 
 export default {
-  title: 'Components/Atoms/Button',
+  title: 'components/atoms/Button',
   component: Button,
   argTypes: {},
   args: {

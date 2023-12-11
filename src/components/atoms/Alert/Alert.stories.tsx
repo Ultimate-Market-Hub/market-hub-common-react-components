@@ -4,7 +4,7 @@ import { Alert } from './Alert';
 
 const meta = {
   component: Alert,
-  title: 'Components/Atoms/Alert',
+  title: 'components/atoms/Alert',
   args: {
     type: 'error',
     children: 'This is me showing an alert',

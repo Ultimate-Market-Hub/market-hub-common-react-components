@@ -1,11 +1,11 @@
 import React from 'react';
 import type { Meta, StoryFn } from '@storybook/react';
 import { Table } from './Table';
-import { columns } from './story.column.definitions';
+import { columns } from './column.definitions.story';
 import type { ColumnDef } from '@tanstack/react-table';
 
 export default {
-  title: 'Components/Molecules/Table',
+  title: 'components/molecules/Table',
   component: Table,
   argTypes: {},
 } as Meta<typeof Table>;

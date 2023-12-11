@@ -13,3 +13,6 @@ export * from './components/controlled/ControlledCheckboxField';
 export * from './components/controlled/ControlledListbox';
 export * from './components/controlled/ControlledSwitch';
 export * from './components/controlled/ControlledTextField';
+
+// Molecules
+export * from './components/molecules/Table';
