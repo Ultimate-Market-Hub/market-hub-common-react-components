@@ -21,6 +21,10 @@ export * from './components/molecules/TabMenu';
 export * from './components/molecules/RouteStepper';
 export * from './components/molecules/ColumnCheckbox';
 export * from './components/molecules/FeaturedSection';
+export * from './components/molecules/ComponentLevelError';
+export * from './components/molecules/DangerZone';
+export * from './components/molecules/Modal';
+export * from './components/molecules/Notification';
 
 // Layout
 export * from './components/layout/ContentLayout';
