@@ -6,6 +6,7 @@ export * from './components/atoms/Select';
 export * from './components/atoms/TextField';
 export * from './components/atoms/LinkButton';
 export * from './components/atoms/Listbox';
+export * from './components/atoms/LoadingSpinner';
 export * from './components/atoms/Switch';
 
 // controlled
