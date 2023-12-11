@@ -31,18 +31,10 @@ const ResizeObserverMock = vi.fn(() => ({
 
 vi.stubGlobal('ResizeObserver', ResizeObserverMock);
 
-//This is needed to be able to navigate between pages in our 'integ' tests
-//https://github.com/remix-run/react-router/blob/main/packages/router/__tests__/setup.ts
-// See https://github.com/vitest-dev/vitest/issues/3077
-// Built-in lib.dom.d.ts expects `fetch(Request | string, ...)` but the web
-// fetch API allows a URL so @remix-run/web-fetch defines
-// `fetch(string | URL | Request, ...)`
 // @ts-expect-error
 globalThis.fetch = fetch;
-// Same as above, lib.dom.d.ts doesn't allow a URL to the Request constructor
 // @ts-expect-error
 globalThis.Request = Request;
-// web-std/fetch Response does not currently implement Response.error()
 // @ts-expect-error
 globalThis.Response = Response;
 
