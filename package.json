@@ -13,7 +13,7 @@
   },
   "type": "module",
   "types": "./dist/src/index.d.ts",
-  "module": "./dist/src/market-hub-components-library.js",
+  "module": "./dist/market-hub-components-library.js",
   "scripts": {
     "start": "vite dev",
     "lint": "eslint . --fix",
