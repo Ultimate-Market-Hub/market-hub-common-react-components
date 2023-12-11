@@ -19,20 +19,10 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:markdown/recommended',
   ],
-  rules: {
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      { ignoreRestSiblings: true },
-    ],
-    'no-console': 'error',
-    '@typescript-eslint/restrict-template-expressions': 'off',
-    'prettier/prettier': 2,
-    '@typescript-eslint/consistent-type-imports': 'error',
-  },
   overrides: [
     {
       extends: ['plugin:@typescript-eslint/disable-type-checked'],
       files: ['./**/*.json'],
     },
   ],
-};
+}

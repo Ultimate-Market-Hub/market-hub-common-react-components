@@ -1,17 +1,3 @@
-/*
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/typography'),
-    ],
-  }
-  ```
-*/
 import { RadioGroup } from '@headlessui/react';
 import { StarIcon } from '@heroicons/react/20/solid';
 import {
@@ -114,8 +100,7 @@ export default function ProductOverviewTieredImages() {
               <li key={breadcrumb.id}>
                 <div className="flex items-center">
                   <Link
-                    to="products/$productId"
-                    params={{ productId: breadcrumb.href }}
+                    to={`products/${breadcrumb.href}`}
                     className="mr-4 text-sm font-medium text-gray-900"
                   >
                     {breadcrumb.name}
@@ -202,8 +187,7 @@ export default function ProductOverviewTieredImages() {
               <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 lg:gap-8">
                 {product.images.map((image, index) => (
                   <Link
-                    to="/products/$productId"
-                    params={{ productId: product.href }}
+                    to={`/products/${product.href}`}
                   >
                     <img
                       key={image.id}
