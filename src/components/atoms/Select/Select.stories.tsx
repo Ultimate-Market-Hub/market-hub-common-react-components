@@ -4,7 +4,7 @@ import { fn } from '@storybook/test';
 
 const meta = {
   component: Select,
-  title: 'Components/Atoms/Select',
+  title: 'components/atoms/Select',
   args: {
     onChange: fn(),
     fullWidth: false,

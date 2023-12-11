@@ -17,6 +17,7 @@ const navigation = [
   { name: 'Clients', href: '#' },
   { name: 'Expenses', href: '#' },
 ];
+
 const secondaryNavigation = [
   { name: 'General', href: '#', icon: UserCircleIcon, current: true },
   { name: 'Security', href: '#', icon: FingerPrintIcon, current: false },

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  presets: [require("../tailwind-preset/index")],
+  presets: [require("@ultimate-market-hub/tailwind-preset")],
   plugins: [
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),

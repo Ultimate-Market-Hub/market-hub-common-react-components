@@ -1,43 +1,29 @@
-/*
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
 const products = [
   {
     id: 1,
-    name: "Black Basic Tee",
-    price: "$32",
-    href: "#",
+    name: 'Black Basic Tee',
+    price: '$32',
+    href: '#',
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
+      'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
     imageAlt: "Model wearing women's black cotton crewneck tee.",
   },
   {
     id: 1,
-    name: "Black Basic Tee",
-    price: "$32",
-    href: "#",
+    name: 'Black Basic Tee',
+    price: '$32',
+    href: '#',
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
+      'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
     imageAlt: "Model wearing women's black cotton crewneck tee.",
   },
   {
     id: 1,
-    name: "Black Basic Tee",
-    price: "$32",
-    href: "#",
+    name: 'Black Basic Tee',
+    price: '$32',
+    href: '#',
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
+      'https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg',
     imageAlt: "Model wearing women's black cotton crewneck tee.",
   },
   // More products...

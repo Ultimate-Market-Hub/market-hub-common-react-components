@@ -3,7 +3,7 @@ import type { Meta, StoryFn } from '@storybook/react';
 import { FeaturedSection, type FeaturedSectionProps } from './FeaturedSection';
 
 export default {
-  title: 'Components/Store/Featured Section',
+  title: 'components/molecules/Featured Section',
   component: FeaturedSection,
   argTypes: {},
 } as Meta<typeof FeaturedSection>;

@@ -3,7 +3,7 @@ import { Card } from './Card';
 
 const meta = {
   component: Card,
-  title: 'Components/Atoms/Card',
+  title: 'components/atoms/Card',
   args: {
     children: (
       <div>
