@@ -8,6 +8,7 @@ export * from './components/atoms/LinkButton';
 export * from './components/atoms/Listbox';
 export * from './components/atoms/LoadingSpinner';
 export * from './components/atoms/Switch';
+export * from './components/atoms/HeaderSection';
 
 // controlled
 export * from './components/controlled/ControlledCheckboxField';
