@@ -16,7 +16,7 @@ export function SplitCreationForm({
   createButtonLabel,
 }: CreateFormProps) {
   return (
-    <div className="relative isolate bg-white">
+    <div className="relative isolate h-full bg-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-3 pb-10 pt-12 sm:pt-16 lg:static lg:px-8 lg:py-24">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
