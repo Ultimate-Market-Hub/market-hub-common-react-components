@@ -2,8 +2,8 @@
   "name": "@ultimate-market-hub/market-hub-components-library",
   "version": "0.0.16",
   "files": [
-    "public",
-    "dist"
+    "dist",
+    "i18next-parser/JSONLexer.js "
   ],
   "lint-staged": {
     "**/!(package|.eslintrc|tsconfig|tailwind.config).{ts,tsx,json,css}": [
@@ -12,15 +12,15 @@
     ]
   },
   "type": "module",
-  "types": "./public/src/index.d.ts",
+  "types": "./dist/src/index.d.ts",
   "source": "src/index.js",
-  "main": "public/market-hub-components-library.js",
-  "module": "./public/market-hub-components-library.js",
+  "main": "dist/market-hub-components-library.js",
+  "module": "./dist/market-hub-components-library.js",
   "scripts": {
     "start": "vite dev",
     "lint": "eslint . --fix",
     "test": "vitest",
-    "build": "vite build --outDir public",
+    "build": "vite build",
     "ts:typecheck": "tsc --noEmit",
     "i18n:extract": "i18next 'src/**/*.{ts,tsx}'",
     "prepare": "is-ci || husky install",
