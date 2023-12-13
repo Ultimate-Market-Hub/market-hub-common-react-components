@@ -28,9 +28,6 @@ export * from './components/molecules/DangerZone';
 export * from './components/molecules/Modal';
 export * from './components/molecules/Notification';
 
-// Organisms
-export * from 'components/organisms/SplitCreationForm';
-
 // Layout
 export * from './components/layout/ContentLayout';
 export * from './components/layout/Layout';
