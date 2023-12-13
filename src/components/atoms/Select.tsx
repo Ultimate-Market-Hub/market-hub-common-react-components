@@ -30,7 +30,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(
     ref
   ) => (
     <select
-      className={`text-16 focus:ring-primary-hub-500500 block rounded-[6px] border-primary-light-grey py-8 pl-12 pr-40 focus:border-primary-hub-500 focus:outline-none sm:text-sm ${
+      className={`text-16 focus:ring-primary-hub-500500 block rounded-[6px] border-primary-light-grey py-2 pl-4 focus:border-primary-hub-500 focus:outline-none sm:text-sm ${
         fullWidth ? 'w-full' : ''
       }`}
       onChange={onChange}

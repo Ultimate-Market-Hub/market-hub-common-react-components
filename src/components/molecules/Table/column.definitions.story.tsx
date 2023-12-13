@@ -75,7 +75,7 @@ export const columns = ({
             header: () => <p>Remove</p>,
             cell: (props) => (
               <Button
-                variant="text"
+                variant="text-error"
                 size="md"
                 leftIcon="XCircleIcon"
                 onClick={() => removeHandler(props.row.index)}
