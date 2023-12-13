@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import { defineConfig, splitVendorChunkPlugin } from 'vite';
 import dts from 'vite-plugin-dts';
 import svgr from 'vite-plugin-svgr';
+import vercel from 'vite-plugin-vercel';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 import * as packageJson from './package.json';
@@ -13,6 +14,7 @@ export default defineConfig((props) => {
       react(),
       svgr(),
       tsconfigPaths(),
+      vercel(),
       dts({
         include: ['src/'],
       }),
@@ -24,7 +26,6 @@ export default defineConfig((props) => {
         name: 'market-hub-common-react-components',
         formats: ['es'],
       },
-      outDir: 'public',
       rollupOptions: {
         external: [
           ...Object.keys(packageJson.dependencies),
