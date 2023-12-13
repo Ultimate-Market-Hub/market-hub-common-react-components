@@ -5,11 +5,11 @@ import { Button } from './Button';
 const meta = {
   component: Button,
   title: 'components/atoms/Button',
-  args: {},
+  args: {
+    children: 'Cock sucker!!!',
+  },
 } satisfies Meta<typeof Button>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const DefaultButton = {
-  args: {},
-} satisfies Story;
+export const DefaultButton = {} satisfies Story;

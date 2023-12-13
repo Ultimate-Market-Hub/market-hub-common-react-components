@@ -28,6 +28,9 @@ export * from './components/molecules/DangerZone';
 export * from './components/molecules/Modal';
 export * from './components/molecules/Notification';
 
+// Organisms
+export * from 'components/organisms/SplitCreationForm';
+
 // Layout
 export * from './components/layout/ContentLayout';
 export * from './components/layout/Layout';
@@ -38,20 +41,21 @@ export * from './components/layout/TabbedMenuLayout';
 export * from './components/layout/TabbedLayoutBreadcrumbs';
 
 // Context
-export * from './context/BreadcrumbsContext'
+export * from './context/BreadcrumbsContext';
+export * from './context/SlideOverContext';
 
 // Hooks
-export * from './hooks/useBreadcrumbs'
-export * from './hooks/useDesktopMenuState'
+export * from './hooks/useBreadcrumbs';
+export * from './hooks/useDesktopMenuState';
 
 // Errors
-export * from './components/errors/ErrorBoundary'
-export * from './components/errors/PageLevelError'
-export * from './components/errors/404'
+export * from './components/errors/ErrorBoundary';
+export * from './components/errors/PageLevelError';
+export * from './components/errors/404';
 
 // Types
-export * from './types/Axios'
-export * from './types/Colors'
-export * from './types/Sizes'
-export * from './types/MenuItem'
-export * from './types/UploadParams'
+export * from './types/Axios';
+export * from './types/Colors';
+export * from './types/Sizes';
+export * from './types/MenuItem';
+export * from './types/UploadParams';
