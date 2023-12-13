@@ -23,7 +23,6 @@ export * from './components/molecules/ComponentLevelError';
 export * from './components/molecules/DangerZone';
 export * from './components/molecules/Modal';
 export * from './components/molecules/Notification';
-export * from 'components/organisms/SplitCreationForm';
 export * from './components/layout/ContentLayout';
 export * from './components/layout/Layout';
 export * from './components/layout/ContentLayoutWithBreadcrumbs';

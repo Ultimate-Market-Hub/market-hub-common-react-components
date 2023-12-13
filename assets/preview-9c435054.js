@@ -1,0 +1,1 @@
+import{r}from"./decorator-a11b1cbc.js";import"./jsx-runtime-ffb262ed.js";import"./index-76fb7be0.js";import"./_commonjsHelpers-de833af9.js";import"./index-4150cf15.js";const s={parameters:{actions:{argTypesRegex:"^on[A-Z].*"},decorators:[r],controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}}}};export{s as parameters};
