@@ -17,14 +17,14 @@ export const TableBase = <TData,>({
   const isEmpty = !table.getRowModel().rows.length;
 
   return (
-    <div className="overflow-auto">
+    <div className="max-h-[600px] overflow-auto">
       <table
         className="min-w-full divide-y divide-primary-light-grey"
         aria-busy={isLoading}
         aria-live="polite"
       >
         {/* Header with buttons elements and sorting icons */}
-        <thead className="bg-neutral-50">
+        <thead className="sticky top-0 bg-neutral-50">
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
               {headerGroup.headers.map((header) => {
@@ -100,7 +100,7 @@ export const TableBase = <TData,>({
                   {row.getVisibleCells().map((cell) => (
                     <td
                       key={cell.id}
-                      className="text-14 whitespace-nowrap p-2 text-primary-medium-grey first:pl-8 first:pr-4 first:font-semibold first:sm:pl-12"
+                      className="text-14 whitespace-nowrap px-2 py-4 font-headline text-primary-medium-grey first:pl-8 first:pr-4 first:font-semibold first:sm:pl-12"
                     >
                       {flexRender(
                         cell.column.columnDef.cell,

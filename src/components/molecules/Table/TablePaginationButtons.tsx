@@ -1,6 +1,6 @@
-import { CircularButton } from '~/components/atoms/CircularButton';
-import type { TableScaffoldingProps } from '~/components/molecules/Table/TableBase';
 import { Select } from '~/components/atoms/Select';
+import { SquareButton } from '~/components/atoms/SquareButton';
+import type { TableScaffoldingProps } from '~/components/molecules/Table/TableBase';
 
 export interface TablePaginationActionsProps<T> {
   table: TableScaffoldingProps<T>['table'];
@@ -16,34 +16,34 @@ export const TablePaginationButtons = <T,>({
   !(isLoading || !table.getRowModel().rows.length) ? (
     <div className="flex items-center justify-between gap-2 border-t border-t-primary-light-grey px-2 py-1">
       <div className="flex gap-2">
-        <CircularButton
-          variant="white"
+        <SquareButton
+          variant="ghost"
           icon="ChevronDoubleLeftIcon"
           onClick={() => table.setPageIndex(0)}
           disabled={!table.getCanPreviousPage()}
           aria-label="First page"
         />
-        <CircularButton
-          variant="white"
+        <SquareButton
+          variant="ghost"
           icon="ChevronLeftIcon"
           onClick={() => table.previousPage()}
           disabled={!table.getCanPreviousPage()}
           aria-label="Previous page"
         />
-        <span className="flex w-24 items-center justify-center font-semibold text-primary-dark-grey">
+        <span className="flex w-12 items-center justify-center font-semibold text-primary-dark-grey">
           {`${
             table.getState().pagination.pageIndex + 1
           } of ${table.getPageCount()}`}
         </span>
-        <CircularButton
-          variant="white"
+        <SquareButton
+          variant="ghost"
           icon="ChevronRightIcon"
           onClick={() => table.nextPage()}
           disabled={!table.getCanNextPage()}
           aria-label="Next page"
         />
-        <CircularButton
-          variant="white"
+        <SquareButton
+          variant="ghost"
           icon="ChevronDoubleRightIcon"
           onClick={() => table.setPageIndex(table.getPageCount() - 1)}
           disabled={!table.getCanNextPage()}
