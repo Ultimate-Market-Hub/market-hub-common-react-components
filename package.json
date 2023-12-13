@@ -2,8 +2,8 @@
   "name": "@ultimate-market-hub/market-hub-components-library",
   "version": "0.0.16",
   "files": [
-    "dist",
-    "i18next-parser/JSONLexer.js "
+    "public",
+    "dist"
   ],
   "lint-staged": {
     "**/!(package|.eslintrc|tsconfig|tailwind.config).{ts,tsx,json,css}": [
@@ -12,13 +12,15 @@
     ]
   },
   "type": "module",
-  "types": "./dist/src/index.d.ts",
-  "module": "./dist/market-hub-components-library.js",
+  "types": "./public/src/index.d.ts",
+  "source": "src/index.js",
+  "main": "public/market-hub-components-library.js",
+  "module": "./public/market-hub-components-library.js",
   "scripts": {
     "start": "vite dev",
     "lint": "eslint . --fix",
     "test": "vitest",
-    "build": "vite build",
+    "build": "vite build --outDir public",
     "ts:typecheck": "tsc --noEmit",
     "i18n:extract": "i18next 'src/**/*.{ts,tsx}'",
     "prepare": "is-ci || husky install",
@@ -77,11 +79,12 @@
     "@typescript-eslint/parser": "^6.7.5",
     "@vitejs/plugin-react": "^4.0.3",
     "classnames": "^2.3.2",
-    "eslint": "^8.55.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-markdown": "^3.0.1",
-    "eslint-plugin-prettier": "5.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^6.2.0",
     "husky": "^8.0.3",
@@ -102,7 +105,6 @@
     "vite-tsconfig-paths": "^4.2.0",
     "vitest": "^0.34.6"
   },
-  "main": "src/index.ts",
   "repository": "git@github.com:Ultimate-Market-Hub/market-hub-common-react-components.git",
   "author": "Hill Matthew <matthill8286@gmail.com>",
   "license": "MIT"

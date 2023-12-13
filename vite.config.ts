@@ -1,9 +1,9 @@
 import { resolve } from 'node:path';
-import { defineConfig, splitVendorChunkPlugin } from 'vite';
 import react from '@vitejs/plugin-react';
+import { defineConfig, splitVendorChunkPlugin } from 'vite';
+import dts from 'vite-plugin-dts';
 import svgr from 'vite-plugin-svgr';
 import tsconfigPaths from 'vite-tsconfig-paths';
-import dts from 'vite-plugin-dts';
 
 import * as packageJson from './package.json';
 
@@ -24,6 +24,7 @@ export default defineConfig((props) => {
         name: 'market-hub-common-react-components',
         formats: ['es'],
       },
+      outDir: 'public',
       rollupOptions: {
         external: [
           ...Object.keys(packageJson.dependencies),

@@ -1,4 +1,4 @@
-import type { AxiosError } from 'axios';
+import { ApolloError } from '@apollo/client';
 import { Button } from 'components/atoms/Button';
 
 export const ComponentLevelError = ({
@@ -6,14 +6,14 @@ export const ComponentLevelError = ({
   handleAction = () => window.location.reload(),
   actionName = 'Reload page',
 }: {
-  error?: AxiosError | null;
+  error?: ApolloError | null;
   handleAction?: (...args: any[]) => void;
   actionName?: string;
 }) => (
   <div className="absolute inset-0 flex h-full w-full justify-center bg-white">
     <div className="grid bg-white px-24 py-96 sm:py-[128px] lg:px-32">
       <div className="pt-32 text-center">
-        <p className="text-16 font-semibold text-primary-hub">{error?.code}</p>
+        <p className="text-16 font-semibold text-primary-hub">{error?.name}</p>
         <h1 className="text-dark-grey text-16 sm:text-24 mt-16 font-bold tracking-tight">
           Sorry, we couldn't find the data you're looking for
         </h1>
