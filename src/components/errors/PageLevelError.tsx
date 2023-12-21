@@ -1,21 +1,17 @@
+import { BellAlertIcon } from '@heroicons/react/24/outline';
 import { Helmet } from 'react-helmet';
 import { useTranslation } from 'react-i18next';
-
-import { LinkButton } from '~/components/atoms/LinkButton';
-import {BellAlertIcon} from "@heroicons/react/24/outline";
 
 export const PageLevelError = ({
   helmet,
   title,
   description,
   code,
-  hideHomeLink,
 }: {
   title: string;
   helmet: string;
   description: string;
   code: string;
-  hideHomeLink?: boolean;
 }) => {
   const { t: translation } = useTranslation();
 
@@ -37,23 +33,12 @@ export const PageLevelError = ({
           <div className="py-[64px]">
             <div className="text-center">
               <p className="text-16 font-semibold text-error">{code}</p>
-              <h1 className="text-dark-grey mt-8 text-32 font-bold tracking-tight sm:text-48">
+              <h1 className="text-dark-grey text-32 sm:text-48 mt-8 font-bold tracking-tight">
                 {title}
               </h1>
-              <p className="mt-8 text-16 text-primary-medium-grey">
+              <p className="text-16 mt-8 text-primary-medium-grey">
                 {description}
               </p>
-              {!hideHomeLink && (
-                <div className="mt-24">
-                  <LinkButton
-                    to="/"
-                    rightIcon="ArrowRightIcon"
-                    variant="text-error"
-                  >
-                    {translation('error-page.go-back-home', 'Go back home')}
-                  </LinkButton>
-                </div>
-              )}
             </div>
           </div>
         </main>
