@@ -26,6 +26,7 @@ export * from './components/molecules/ComponentLevelError';
 export * from './components/molecules/DangerZone';
 export * from './components/molecules/Modal';
 export * from './components/molecules/Notification';
+export * from './components/molecules/MultipleFileUpload';
 
 // Layout
 export * from './components/layout/ContentLayout';
