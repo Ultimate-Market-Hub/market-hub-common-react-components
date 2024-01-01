@@ -1,33 +1,51 @@
 const categories = [
   {
-    name: "New Arrivals",
-    href: "#",
+    name: 'New Arrivals',
+    href: '#',
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg",
+      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg',
   },
   {
-    name: "Productivity",
-    href: "#",
+    name: 'Productivity',
+    href: '#',
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg",
+      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg',
   },
   {
-    name: "Workspace",
-    href: "#",
+    name: 'Workspace',
+    href: '#',
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg",
+      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg',
   },
   {
-    name: "Accessories",
-    href: "#",
+    name: 'Accessories',
+    href: '#',
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg",
+      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg',
   },
   {
-    name: "Sale",
-    href: "#",
+    name: 'Sale',
+    href: '#',
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg",
+      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg',
+  },
+  {
+    name: 'Sale',
+    href: '#',
+    imageSrc:
+      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg',
+  },
+  {
+    name: 'Sale',
+    href: '#',
+    imageSrc:
+      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg',
+  },
+  {
+    name: 'Sale',
+    href: '#',
+    imageSrc:
+      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg',
   },
 ];
 

@@ -22,17 +22,17 @@ import {
   Transition,
 } from '@headlessui/react';
 import {
+  CheckIcon,
+  QuestionMarkCircleIcon,
+  StarIcon,
+} from '@heroicons/react/20/solid';
+import {
   Bars3Icon,
   MagnifyingGlassIcon,
   ShieldCheckIcon,
   ShoppingBagIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
-import {
-  CheckIcon,
-  QuestionMarkCircleIcon,
-  StarIcon,
-} from '@heroicons/react/20/solid';
 
 const navigation = {
   categories: [
@@ -272,7 +272,6 @@ function classNames(...classes: string[]) {
 
 export default function FeaturedDetails() {
   const [open, setOpen] = useState(false);
-  const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
 
   return (
     <div className="bg-gray-50">
@@ -786,74 +785,12 @@ export default function FeaturedDetails() {
                 </h2>
 
                 <form>
-                  <div className="sm:flex sm:justify-between">
-                    {/* Size selector */}
-                    <RadioGroup value={selectedSize} onChange={setSelectedSize}>
-                      <RadioGroup.Label className="block text-sm font-medium text-gray-700">
-                        Size
-                      </RadioGroup.Label>
-                      <div className="mt-1 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                        {product.sizes.map((size) => (
-                          <RadioGroup.Option
-                            as="div"
-                            key={size.name}
-                            value={size}
-                            className={({ active }) =>
-                              classNames(
-                                active ? 'ring-2 ring-primary-hub-500' : '',
-                                'relative block cursor-pointer rounded-lg border border-gray-300 p-4 focus:outline-none'
-                              )
-                            }
-                          >
-                            {({ active, checked }) => (
-                              <>
-                                <RadioGroup.Label
-                                  as="p"
-                                  className="text-base font-medium text-gray-900"
-                                >
-                                  {size.name}
-                                </RadioGroup.Label>
-                                <RadioGroup.Description
-                                  as="p"
-                                  className="mt-1 text-sm text-gray-500"
-                                >
-                                  {size.description}
-                                </RadioGroup.Description>
-                                <div
-                                  className={classNames(
-                                    active ? 'border' : 'border-2',
-                                    checked
-                                      ? 'border-primary-hub-500'
-                                      : 'border-transparent',
-                                    'pointer-events-none absolute -inset-px rounded-lg'
-                                  )}
-                                  aria-hidden="true"
-                                />
-                              </>
-                            )}
-                          </RadioGroup.Option>
-                        ))}
-                      </div>
-                    </RadioGroup>
-                  </div>
-                  <div className="mt-4">
-                    <a
-                      href="#"
-                      className="group inline-flex text-sm text-gray-500 hover:text-gray-700"
-                    >
-                      <span>What size should I buy?</span>
-                      <QuestionMarkCircleIcon
-                        className="ml-2 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
-                        aria-hidden="true"
-                      />
-                    </a>
-                  </div>
                   <div className="mt-10">
                     <button
                       type="submit"
-                      className="focus:ring-primary-hub-500500 flex w-full items-center justify-center rounded-md border border-transparent bg-primary-hub-700 px-8 py-3 text-base font-medium text-white hover:bg-primary-hub-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50"
+                      className="flex w-full items-center justify-center rounded-md border border-transparent bg-primary-hub-700 px-8 py-3 text-base font-medium text-white hover:bg-primary-hub-700 focus:outline-none focus:ring-2 focus:ring-primary-hub-500 focus:ring-offset-2 focus:ring-offset-gray-50"
                     >
-                      Add to bag
+                      Book viewing
                     </button>
                   </div>
                   <div className="mt-6 text-center">

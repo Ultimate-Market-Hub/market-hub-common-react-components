@@ -9,16 +9,16 @@ export const PageLevelError = ({
   code,
 }: {
   title: string;
-  helmet: string;
   description: string;
   code: string;
+  helmet?: string;
 }) => {
   const { t: translation } = useTranslation();
 
   return (
     <>
       <Helmet>
-        <title>{helmet}</title>
+        <title>{helmet ?? title}</title>
         <html className="h-full" />
         <body className="h-full" />
       </Helmet>

@@ -11,15 +11,7 @@ export const MultipleFileUpload = React.forwardRef<
   MultipleFileUploadProps
 >(
   (
-    {
-      handleOnDropAccepted,
-      label,
-      tooltipContent,
-      accept,
-      maxSize = 10000000,
-      error,
-      value,
-    },
+    { handleOnDropAccepted, label, accept, maxSize = 10000000, error, value },
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     ref
   ) => {
@@ -141,7 +133,6 @@ const UploadStatus = ({ value, error }: UploadStatus<any>) => {
 interface MultipleFileUploadProps {
   label: string;
   error?: string | undefined;
-  tooltipContent?: string;
   handleOnDropAccepted: (files: FileWithPath[]) => void;
   accept?: Accept;
   maxSize?: number;

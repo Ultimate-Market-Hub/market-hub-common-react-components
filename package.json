@@ -1,20 +1,8 @@
 {
   "name": "@ultimate-market-hub/market-hub-components-library",
   "version": "0.0.21",
-  "files": [
-    "dist",
-    "i18next-parser/JSONLexer.js "
-  ],
-  "lint-staged": {
-    "**/!(package|.eslintrc|tsconfig|tailwind.config).{ts,tsx,json,css}": [
-      "prettier --write",
-      "eslint --fix --max-warnings=0"
-    ]
-  },
   "type": "module",
   "types": "./dist/src/index.d.ts",
-  "source": "src/index.ts",
-  "main": "dist/market-hub-components-library.js",
   "module": "./dist/market-hub-components-library.js",
   "scripts": {
     "start": "vite dev",
@@ -30,7 +18,25 @@
     "storybook:test:ci": "start-server-and-test storybook:start http://localhost:6006 storybook:test",
     "storybook:start": "serve storybook-static -p 6006"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "@apollo/client": "^3.8.8",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@tanstack/match-sorter-utils": "^8.8.4",
+    "@tanstack/react-table": "^8.9.3",
+    "@ultimate-market-hub/tailwind-preset": "^0.0.3",
+    "axios": "^0.27.2",
+    "classnames": "^2.3.2",
+    "i18next": "^21.6.14",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.45.2",
+    "react-i18next": "^12.0.0",
+    "react-router-dom": "^6.20.1"
+  },
+  "devDependencies": {
     "@apollo/client": "^3.8.8",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
@@ -47,12 +53,6 @@
     "react-hook-form": "^7.45.2",
     "react-i18next": "^12.0.0",
     "react-router-dom": "^6.20.1",
-    "typescript": "^5.2.2",
-    "vite": "^4.5.0"
-  },
-  "devDependencies": {
-    "@apollo/client": "^3.8.8",
-    "@heroicons/react": "^2.0.18",
     "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
     "@storybook/addon-a11y": "^7.6.3",
     "@storybook/addon-essentials": "^7.6.3",
@@ -79,7 +79,6 @@
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
     "@vitejs/plugin-react": "^4.0.3",
-    "classnames": "^2.3.2",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -89,7 +88,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^6.2.0",
     "husky": "^8.0.3",
-    "i18next": "^21.6.14",
     "i18next-parser": "^8.9.0",
     "jsdom": "^22.1.0",
     "lint-staged": "^13.2.3",
@@ -99,14 +97,31 @@
     "start-server-and-test": "^2.0.3",
     "storybook": "^7.6.3",
     "tailwindcss": "^3.3.3",
-    "typescript": "^5.2.2",
     "vite-plugin-dts": "^3.3.1",
     "vite-plugin-svgr": "^3.3.0",
     "vite-plugin-vercel": "^2.0.0",
     "vite-tsconfig-paths": "^4.2.0",
-    "vitest": "^0.34.6"
+    "vitest": "^0.34.6",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/market-hub-components-library.js"
+    },
+    "./i18next-parser/JSONLexer": "./i18next-parser/JSONLexer.js"
   },
   "repository": "git@github.com:Ultimate-Market-Hub/market-hub-common-react-components.git",
   "author": "Hill Matthew <matthill8286@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "dist",
+    "i18next-parser/JSONLexer.js "
+  ],
+  "lint-staged": {
+    "**/!(package|.eslintrc|tsconfig|tailwind.config).{ts,tsx,json,css}": [
+      "prettier --write",
+      "eslint --fix --max-warnings=0"
+    ]
+  }
 }

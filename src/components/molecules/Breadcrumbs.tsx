@@ -21,25 +21,25 @@ export const Breadcrumbs = ({
       {withHomeIncluded && (
         <>
           <Link
-            className="text-14 text-accessible-dark-turquoise font-normal leading-6"
+            className="text-14 text-accessible-dark-turquoise font-text font-normal leading-6"
             to="/"
           >
             Home
           </Link>
-          <ChevronRightIcon className="fill-accessible-dark-turquoise h-24" />
+          <ChevronRightIcon className="fill-accessible-dark-turquoise h-6" />
         </>
       )}
       {pages.map((link, index, array) => {
         return (
           <div key={link.name} className="flex items-center">
             <Link
-              className="text-14 text-accessible-dark-turquoise last:text-dark-grey hover:text-turquoise last:hover:text-dark-grey font-normal leading-6 last:font-bold"
+              className="text-14 last:text-dark-grey last:hover:text-dark-grey font-text leading-6 text-secondary-accessible-dark-yellow last:font-bold hover:text-secondary-accessible-dark-yellow"
               to={link.href}
             >
               {link.name}
             </Link>
             {index !== array.length - 1 && (
-              <ChevronRightIcon className="fill-accessible-dark-turquoise h-24" />
+              <ChevronRightIcon className="h-6 fill-secondary-accessible-dark-yellow" />
             )}
           </div>
         );
