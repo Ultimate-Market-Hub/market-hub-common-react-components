@@ -28,6 +28,9 @@ export * from './components/molecules/Modal';
 export * from './components/molecules/Notification';
 export * from './components/molecules/MultipleFileUpload';
 
+// Organisms
+export * from './components/organisms/DocumentUpload';
+
 // Layout
 export * from './components/layout/ContentLayout';
 export * from './components/layout/Layout';

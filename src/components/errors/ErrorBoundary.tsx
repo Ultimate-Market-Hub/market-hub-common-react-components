@@ -31,6 +31,7 @@ export function ErrorBoundary() {
       // eslint-disable-next-line no-console
       console.log('🧼 ErrorBoundary.tsx: NON route error:', error);
     }
+
     return (
       <PageLevelError
         title={translation(

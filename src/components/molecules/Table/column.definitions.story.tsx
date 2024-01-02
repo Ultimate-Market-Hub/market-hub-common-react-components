@@ -58,6 +58,7 @@ export const columns = ({
               <Button
                 variant="text"
                 size="md"
+                className="font-thin"
                 rightIcon="ChevronRightIcon"
                 onClick={() => removeHandler(props.row.index)}
               >
@@ -76,6 +77,7 @@ export const columns = ({
             cell: (props) => (
               <Button
                 variant="text-error"
+                className="font-thin"
                 size="md"
                 leftIcon="XCircleIcon"
                 onClick={() => removeHandler(props.row.index)}

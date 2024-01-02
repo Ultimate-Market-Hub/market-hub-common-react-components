@@ -36,7 +36,7 @@ export const TableBase = <TData,>({
                   <th
                     key={header.id}
                     scope="col"
-                    className="text-14 py-4 text-left font-semibold text-primary-dark-grey first:pl-8 first:pr-4 first:font-semibold first:sm:pl-12"
+                    className="text-14 py-4 text-left font-headline font-semibold text-primary-dark-grey first:pl-8 first:pr-4 first:font-semibold first:sm:pl-12"
                   >
                     {header.column.getCanSort() ? (
                       <button
@@ -74,10 +74,10 @@ export const TableBase = <TData,>({
                       {headerGroup.headers.map((_, index) => (
                         <td
                           key={`${headerGroup.id}-${index}`}
-                          className="p-4 first:pl-8 first:pr-4 first:sm:pl-4"
+                          className="p-2 pt-4 first:pl-4 first:pr-4 first:sm:pl-4"
                         >
                           <div
-                            className="h-12 w-1/2 bg-neutral-50"
+                            className="h-6 w-full bg-neutral-50"
                             aria-label="Loading"
                           />
                         </td>
@@ -100,7 +100,7 @@ export const TableBase = <TData,>({
                   {row.getVisibleCells().map((cell) => (
                     <td
                       key={cell.id}
-                      className="text-14 whitespace-nowrap px-2 py-4 font-headline text-primary-medium-grey first:pl-8 first:pr-4 first:font-semibold first:sm:pl-12"
+                      className="text-14 whitespace-nowrap px-2 py-4 font-text font-thin text-primary-medium-grey first:pl-8 first:pr-4 first:font-semibold first:sm:pl-12"
                     >
                       {flexRender(
                         cell.column.columnDef.cell,

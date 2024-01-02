@@ -30,7 +30,7 @@ export const TablePaginationButtons = <T,>({
           disabled={!table.getCanPreviousPage()}
           aria-label="Previous page"
         />
-        <span className="flex w-12 items-center justify-center font-semibold text-primary-dark-grey">
+        <span className="flex w-12 items-center justify-center font-thin text-primary-dark-grey">
           {`${
             table.getState().pagination.pageIndex + 1
           } of ${table.getPageCount()}`}
@@ -51,7 +51,7 @@ export const TablePaginationButtons = <T,>({
         />
       </div>
       <div className="flex items-center gap-2">
-        <span className="text-primary-dark-grey">Show</span>
+        <span className="font-thin text-primary-dark-grey">Show</span>
         <Select
           value={table.getState().pagination.pageSize.toString()}
           options={options.map((pageSize) => ({

@@ -1,9 +1,7 @@
 import { BellAlertIcon } from '@heroicons/react/24/outline';
 import { Helmet } from 'react-helmet';
-import { useTranslation } from 'react-i18next';
 
 export const PageLevelError = ({
-  helmet,
   title,
   description,
   code,
@@ -11,14 +9,11 @@ export const PageLevelError = ({
   title: string;
   description: string;
   code: string;
-  helmet?: string;
 }) => {
-  const { t: translation } = useTranslation();
-
   return (
     <>
       <Helmet>
-        <title>{helmet ?? title}</title>
+        <title>{title}</title>
         <html className="h-full" />
         <body className="h-full" />
       </Helmet>
@@ -26,8 +21,8 @@ export const PageLevelError = ({
         <main className="mx-auto flex w-full max-w-7xl flex-grow flex-col justify-center px-16 sm:px-24 lg:px-32">
           <div className="flex flex-shrink-0 justify-center">
             <div className="inline-flex">
-              <span className="sr-only">UMH</span>
-              <BellAlertIcon className="h-24 w-auto" />
+              <span className="sr-only">{title}</span>
+              <BellAlertIcon className="h-24 w-auto fill-primary-hub" />
             </div>
           </div>
           <div className="py-[64px]">
