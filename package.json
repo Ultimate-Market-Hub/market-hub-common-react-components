@@ -1,6 +1,6 @@
 {
   "name": "@ultimate-market-hub/market-hub-components-library",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "type": "module",
   "types": "./dist/src/index.d.ts",
   "module": "./dist/market-hub-components-library.js",
