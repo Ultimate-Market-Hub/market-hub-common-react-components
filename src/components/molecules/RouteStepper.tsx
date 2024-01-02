@@ -16,9 +16,9 @@ export const RouteStepper: FC<Stepper> = ({ steps }) => {
             end={step.end}
             key={step.name}
             to={step.href}
-            className="w-full whitespace-nowrap border-b-2 px-4 py-16 text-sm font-bold"
-            activeClassName="border-accessible-dark-turquoise text-accessible-dark-turquoise"
-            inActiveClassName="hover:border-gray-300 border-transparent font-bold text-primary-light-grey hover:text-accessible-dark-turquoise hover:border-accessible-dark-turquoise"
+            className="w-full whitespace-nowrap border-b-2 px-4 py-6 text-sm font-bold"
+            activeClassName="border-accessible-dark-yellow text-accessible-dark-yellow"
+            inActiveClassName="hover:border-gray-300 border-transparent font-bold text-primary-light-grey hover:text-accessible-dark-yellow hover:border-accessible-dark-yellow"
           >
             <div className="mb-2">{step.name}</div>
             <span className="font-normal text-primary-medium-grey">

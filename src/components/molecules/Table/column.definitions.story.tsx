@@ -2,7 +2,7 @@ import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import { createColumnHelper, type ColumnHelper } from '@tanstack/react-table';
 
 import { Button } from '~/components/atoms/Button';
-import { ColumnCheckbox } from '~/components/molecules/ColumnCheckbox';
+import { ColumnCheckbox } from '~/components/molecules/Table/ColumnCheckbox';
 
 const columnHelper: ColumnHelper<any> = createColumnHelper<any>();
 

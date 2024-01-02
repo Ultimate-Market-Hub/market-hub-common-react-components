@@ -20,25 +20,16 @@ export * from './components/molecules/Table';
 export * from './components/molecules/Breadcrumbs';
 export * from './components/molecules/TabMenu';
 export * from './components/molecules/RouteStepper';
-export * from './components/molecules/ColumnCheckbox';
+export * from './components/molecules/Table/ColumnCheckbox';
 export * from './components/molecules/FeaturedSection';
 export * from './components/molecules/ComponentLevelError';
 export * from './components/molecules/DangerZone';
 export * from './components/molecules/Modal';
 export * from './components/molecules/Notification';
-export * from './components/molecules/MultipleFileUpload';
+export * from './components/molecules/SlideOver';
 
 // Organisms
 export * from './components/organisms/DocumentUpload';
-
-// Layout
-export * from './components/layout/ContentLayout';
-export * from './components/layout/Layout';
-export * from './components/layout/ContentLayoutWithBreadcrumbs';
-export * from './components/layout/StepperWithBreadcrumbs';
-export * from './components/layout/TabbedMenuLayout';
-export * from './components/layout/TabbedMenuLayout';
-export * from './components/layout/TabbedLayoutBreadcrumbs';
 
 // Context
 export * from './context/BreadcrumbsContext';

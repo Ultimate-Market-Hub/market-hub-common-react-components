@@ -20,7 +20,7 @@ export const Modal = ({
             className={`w-full rounded-2 bg-white p-4 shadow-xl ${memoizedMaxWidth} ${className}`}
           >
             {title && (
-              <Dialog.Title className="mb-12 text-lg font-bold">
+              <Dialog.Title className="mb-6 text-lg font-bold">
                 {title}
               </Dialog.Title>
             )}

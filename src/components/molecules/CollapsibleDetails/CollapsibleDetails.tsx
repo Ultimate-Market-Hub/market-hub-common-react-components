@@ -15,18 +15,18 @@ export const CollapsibleDetails = ({
 }: CollapsibleDetailsProps) => {
   return (
     <details
-      className="group w-full bg-primary-white p-12 pb-0 sm:rounded-4"
+      className="group w-full bg-primary-white p-4 pb-0 sm:rounded-4"
       open={defaultIsOpen}
     >
-      <summary className="flex w-full select-none justify-between border-b border-primary-light-grey pb-12 text-left font-semibold">
+      <summary className="flex w-full select-none justify-between border-b border-primary-light-grey pb-4 text-left font-semibold">
         {heading}
         <ChevronDownIcon
           className={classNames(
-            'h-24 text-secondary-accessible-dark-turquoise transition-transform group-open:-rotate-180'
+            'text-secondary-accessible-dark-turquoise h-6 transition-transform group-open:-rotate-180'
           )}
         />
       </summary>
-      <div className="mt-12 flex flex-col gap-4">{children}</div>
+      <div className="mt-4 flex flex-col gap-4">{children}</div>
     </details>
   );
 };

@@ -44,12 +44,12 @@ export const Notification = ({
         role="alertdialog"
         aria-describedby="notification-message"
         className={`pointer-events-auto w-full max-w-sm overflow-hidden rounded-4 border border-${
-          warning ? 'hub-500' : 'green-900'
+          warning ? 'primary-hub-500' : 'secondary-green-900'
         } bg-${
-          warning ? 'hub-100' : 'green-100'
+          warning ? 'primary-hub-100' : 'secondary-green-100'
         } shadow-lg ring-1 ring-black ring-opacity-5`}
       >
-        <div className="p-16">
+        <div className="p-6">
           <div
             className={classNames('flex', {
               'items-start': variant !== 'simple',
@@ -59,13 +59,13 @@ export const Notification = ({
             {!warning && (
               <div className="flex-shrink-0">
                 <CheckCircleIcon
-                  className="h-24 w-24 text-green-900"
+                  className="h-6 w-6 text-secondary-green-900"
                   aria-hidden="true"
                 />
               </div>
             )}
             <div
-              className={classNames('ml-12 w-0 flex-1', {
+              className={classNames('ml-6 w-0 flex-1', {
                 '-mt-2': variant !== 'simple',
               })}
             >
@@ -81,7 +81,7 @@ export const Notification = ({
                 </p>
               ) : null}
             </div>
-            <div className="ml-16 flex flex-shrink-0">
+            <div className="ml-6 flex flex-shrink-0">
               {variant === 'closeable' ? (
                 <button
                   type="button"
@@ -98,7 +98,7 @@ export const Notification = ({
                     {translation('notification.close', 'Close')}
                   </span>
                   <XMarkIcon
-                    className="h-20 w-20 text-green-900"
+                    className="h-6 w-6 text-secondary-green-900"
                     aria-hidden="true"
                   />
                 </button>

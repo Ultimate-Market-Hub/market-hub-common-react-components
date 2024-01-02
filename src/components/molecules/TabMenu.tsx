@@ -9,16 +9,16 @@ export const TabMenu = ({
 }) => {
   return (
     <div className="border-light-grey border-b">
-      <nav className="-mb-px flex space-x-32 overflow-x-auto" aria-label="Tabs">
+      <nav className="-mb-px flex space-x-12 overflow-x-auto" aria-label="Tabs">
         {tabs.map((tab) => (
           <NavLink
             end={tab.end}
             key={tab.name}
             to={tab.href}
             className={({ isActive }) =>
-              `whitespace-nowrap border-b-2 px-4 py-16 text-sm ${
+              `whitespace-nowrap border-b-2 px-4 py-6 text-sm ${
                 isActive
-                  ? 'border-accessible-dark-turquoise text-accessible-dark-turquoise font-bold'
+                  ? 'border-secondary-accessible-dark-yellow font-bold text-secondary-accessible-dark-yellow'
                   : 'border-transparent font-medium text-primary-medium-grey hover:border-gray-300 hover:text-primary-darker-grey'
               }`
             }

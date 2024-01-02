@@ -30,13 +30,13 @@ const SlideOverExample = () => {
 
   return (
     <div>
-      <div>
-        <button onClick={() => openSlide('exampleSlide')}>
+      <div className="flex space-x-3">
+        <Button onClick={() => openSlide('exampleSlide')}>
           Open Slide Over
-        </button>
-        <button onClick={() => openSlide('exampleProfile')}>
+        </Button>
+        <Button onClick={() => openSlide('exampleProfile')}>
           Open Profile Slide Over
-        </button>
+        </Button>
       </div>
 
       <div>
