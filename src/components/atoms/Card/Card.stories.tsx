@@ -1,10 +1,12 @@
 import { type Meta, type StoryObj } from '@storybook/react';
+
 import { Card } from './Card';
 
 const meta = {
   component: Card,
   title: 'components/atoms/Card',
   args: {
+    className: 'p-4',
     children: (
       <div>
         <h1>Header</h1>
